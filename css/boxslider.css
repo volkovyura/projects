@@ -1,0 +1,178 @@
+/*
+ * jQuery FlexSlider v2.6.2
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ *
+ */
+
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+.box-container a:hover,
+.box-slider a:hover {
+  outline: none;
+}
+.slides,
+.slides > li,
+.box-main-nav,
+.box-.box-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.box-pauseplay span {
+  text-transform: capitalize;
+}
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+
+.boxslider .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+.boxslider .slides img {
+  width: 100%;
+  display: block;
+}
+
+}
+html[xmlns] .boxslider .slides {
+  display: block;
+}
+* html .boxslider .slides {
+  height: 1%;
+}
+.no-js .boxslider .slides > li:first-child {
+  display: block;
+}
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+ .boxslider {
+  position: relative;
+}
+
+.boxslider .slides .slide_content img {
+	width:80px;
+	height: auto;
+	margin:0 auto;
+	margin-bottom:100px;
+}
+
+
+.box-prev:before {
+	content: '\f104';
+    font-family: 'fontello';
+	position: absolute;
+    right: 10px;
+    bottom: 12px;
+    font-size: 25px;
+}
+
+.box-nav-next,
+.box-nav-prev {
+  position:static;
+  padding:0;
+}
+
+.box-next:before {
+	content: '\f105';
+    font-family: 'fontello';
+	position: absolute;
+    right: 10px;
+    bottom: 12px;
+    font-size: 25px;
+	overflow: hidden;
+}
+
+.box-nav-prev .box-prev {
+	position: absolute;
+    top: 40%;
+    width: 30px;
+    height: 50px;
+    background: #ffffff;
+    color: #3e3938;
+}
+
+.box-nav-prev .box-prev {
+	left:0;
+}
+
+.box-nav-next .box-next {
+	position: absolute;
+    top: 40%;
+    width: 30px;
+    height: 50px;
+    background: #ffffff;
+    color: #3e3938;
+}
+
+.box-nav-next .box-next {
+	right:0;
+}
+
+
+.box-main-nav {
+  width: 100%;
+  position: absolute;
+  bottom:0;
+  text-align: center;
+}
+.box-main-nav li {
+	margin: 0 3px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+} 
+
+.box-control-paging li a {
+	width: 10px;
+	height: 10px;
+	display: block;
+	background: #ededed;
+	cursor: pointer;
+	text-indent: -9999px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+.box-control-paging li a:hover {
+  background: #d68662;
+}
+.box-control-paging li a.box-active {
+  background: #d68662;
+  cursor: default;
+}
+
+.box-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+.box-control-thumbs img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.box-control-thumbs img:hover {
+  opacity: 1;
+}
+.box-control-thumbs .box-active {
+  opacity: 1;
+  cursor: default;
+}
+

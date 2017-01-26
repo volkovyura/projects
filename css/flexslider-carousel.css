@@ -1,0 +1,245 @@
+/*
+ * jQuery FlexSlider v2.6.2
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 and later license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author: Tyler Smith (@mbmufffin)
+ *
+ */
+/* ====================================================================================================================
+ * FONT-FACE
+ * ====================================================================================================================*/
+@font-face {
+  font-family: 'flexslider-icon';
+  src: url('../fonts/webfont/flexslider-icon.eot');
+  src: url('../fonts/webfonts/flexslider-icon.eot?#iefix') format('embedded-opentype'), url('../fonts/webfonts/flexslider-icon.woff') format('woff'), url('../fonts/webfonts/flexslider-icon.ttf') format('truetype'), url('../fonts/webfonts/flexslider-icon.svg#flexslider-icon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/* ====================================================================================================================
+ * RESETS
+ * ====================================================================================================================*/
+.fox-container a:hover,
+.fox-slider a:hover {
+  outline: none;
+}
+.slides,
+.slides > li,
+.fox-control-nav,
+.fox-direction-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.fox-pauseplay span {
+  text-transform: capitalize;
+}
+/* ====================================================================================================================
+ * BASE STYLES
+ * ====================================================================================================================*/
+.carousel {
+  margin: 0;
+  padding: 0;
+}
+.carousel .slides > li {
+  display: none;
+  -webkit-backface-visibility: hidden;
+}
+.carousel .slides img {
+  width: 100%;
+  display: block;
+}
+.carousel .slides:after {
+  content: "\0020";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+html[xmlns] .carousel .slides {
+  display: block;
+}
+* html .carousel .slides {
+  height: 1%;
+}
+.no-js .carousel .slides > li:first-child {
+  display: block;
+}
+/* ====================================================================================================================
+ * DEFAULT THEME
+ * ====================================================================================================================*/
+.carousel {
+  margin: 0 0 160px;
+  position: relative;
+}
+.carousel .slides {
+  zoom: 1;
+}
+.carousel .slides img {
+	width:214px;
+	height: auto;
+	-moz-user-select: none;
+}
+
+
+.fox-viewport {
+  max-height: 2000px;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+  margin:0 50px;
+}
+.loading .fox-viewport {
+  max-height: 300px;
+}
+
+.fox-direction-nav {
+  *height: 0;
+}
+.carousel.fox-direction-nav a {
+	position: absolute;
+    top: 0;
+    width: 30px;
+    height: 50px;
+    color: #3e3938;
+	background:#f8efea;
+}
+
+.fox-direction-nav a:hover{
+	background:#fff;
+	border:1px solid #ebebeb;
+}
+
+.fox-prev:before {
+	content: '\f104';
+    font-family: 'fontello';
+	position: absolute;
+    right: 10px;
+    bottom: 12px;
+    font-size: 25px;
+}
+
+.fox-nav-next,
+.fox-nav-prev {
+  position:static;
+  padding:0;
+}
+
+.fox-next:before {
+	content: '\f105';
+    font-family: 'fontello';
+	position: absolute;
+    right: 10px;
+    bottom: 12px;
+    font-size: 25px;
+	overflow: hidden;
+}
+
+.fox-prev:hover:before,
+.fox-next:hover:before {
+	color:#cdc4c2;
+}
+
+.fox-nav-next .fox-next,
+.fox-nav-prev .fox-prev {
+	position: absolute;
+    top: 0;
+    width: 30px;
+    height: 50px;
+    background: #f8efea;
+    color: #3e3938;
+}
+
+.fox-nav-prev .fox-prev {
+	left:0;
+}
+
+.fox-nav-next .fox-next {
+	right:0;
+}
+
+.fox-pauseplay a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 5px;
+  left: 10px;
+  opacity: 0.8;
+  z-index: 10;
+  overflow: hidden;
+  cursor: pointer;
+  color: #000;
+}
+
+
+
+.fox-control-nav {
+  width: 100%;
+  position: absolute;
+  bottom: -65px;
+  text-align: center;
+}
+
+.fox-control-nav li {
+  margin: 0 3px;
+  display: inline-block;
+  zoom: 1;
+  *display: inline;
+}
+.fox-control-paging li a {
+  width: 10px;
+    height: 10px;
+    display: block;
+    background: #ededed;
+    cursor: pointer;
+    text-indent: -9999px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+.fox-control-paging li a:hover {
+	background: #d68662;
+
+}
+.fox-control-paging li a.fox-active {
+	background: #d68662;
+    cursor: default;
+}
+.fox-control-thumbs {
+  margin: 5px 0 0;
+  position: static;
+  overflow: hidden;
+}
+.fox-control-thumbs li {
+  width: 25%;
+  float: left;
+  margin: 0;
+}
+.fox-control-thumbs img {
+  width: 100%;
+  height: auto;
+  display: block;
+  opacity: .7;
+  cursor: pointer;
+  -moz-user-select: none;
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.fox-control-thumbs img:hover {
+  opacity: 1;
+}
+.fox-control-thumbs .fox-active {
+  opacity: 1;
+  cursor: default;
+}
+
