@@ -1,12 +1,18 @@
 .nbs-flexisel-ul {
     position:relative;
     width:99999px;
-    margin:0px;
-    padding:0px;
+    margin:0;
+    padding:0;
 	
 }
 
+.portfolio_flexisel {
+	margin:0 20px;
+}
 
+.row_flexisel {
+	margin:0 -20px;
+}
 
 .nbs-flexisel-container {
     position:relative;
@@ -19,13 +25,13 @@
     overflow: hidden;
     float:left;
     width:100%;
-    
+	margin-bottom:140px;
 }
 
 .nbs-flexisel-item {
     float:left;
     margin:0;
-    padding:0 20px;
+    padding:0;
     cursor:pointer;
     position:relative;
 }
@@ -51,7 +57,7 @@
 }
 
 .nbs-flexisel-nav-left {
-    left: 0;
+    left: 20px;
 }
 
 .nbs-flexisel-nav-left:before {
@@ -68,7 +74,7 @@
 }
 
 .nbs-flexisel-nav-right {
-    right: 0;    
+    right: 20px;    
 }
 
 .nbs-flexisel-nav-right:before {

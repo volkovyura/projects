@@ -9,8 +9,8 @@
 		<link href="css/flexslider-carousel.css" rel="stylesheet">
 		<link href="css/fontello.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Hind:300,400,700|Karla:400,400i,700,700i|Lora:400,400i,700,700i" rel="stylesheet">
-		<link href="css/slides.css" rel="stylesheet">
-		<link href="css/bxcarousel.css" rel="stylesheet">
+		<link href="css/flexisel.css" rel="stylesheet">
+		<link href="css/postslider.css" rel="stylesheet">
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<title>Handmade</title>
 	</head>
@@ -572,9 +572,9 @@
 						
 					});
 					</script>
-					<ul id="flexiselDemo3">	    	  	       	   	    	
+					<ul id="flexiselDemo3">
 						<li>
-							<article class="portfolio_item">
+							<article class="portfolio_item portfolio_flexisel">
 								<figure class="portfolio_item_img">
 									<img src="images/portfolio_2.jpg" alt="">
 								</figure>
@@ -591,7 +591,7 @@
 							</article>
 						</li>
 						<li>
-							<article class="portfolio_item">
+							<article class="portfolio_item portfolio_flexisel">
 								<figure class="portfolio_item_img">
 									<img src="images/portfolio_2.jpg" alt="">
 								</figure>
@@ -608,7 +608,7 @@
 							</article>
 						</li>
 						<li>
-							<article class="portfolio_item">
+							<article class="portfolio_item portfolio_flexisel">
 								<figure class="portfolio_item_img">
 									<img src="images/portfolio_2.jpg" alt="">
 								</figure>
@@ -626,81 +626,99 @@
 						</li>
 					</ul>
 					<div class="clear"></div>
-					<script type="text/javascript">
-						jQuery(document).ready(function(){
-						jQuery('.bxslider').bxSlider({
-						  minSlides: 3,
-						  maxSlides: 3,
-						  slideWidth: 170,
-						  slideMargin: 10
-						});
-						  });
+					<script>
+							jQuery(window).load(function() {
+							jQuery("#ProjectSlider").projectSlider({
+							visibleItems: 3,
+							itemsToScroll: 1,
+							autoPlay: {
+								enable: true,
+								interval: 5000,
+								pauseOnHover: true,
+								setInterval: 100
+
+							}        
+						});					
+						
+					});
 					</script>
-					<ul class="bxslider">
-						<li>
-							<article class="one_third">
-							<figure class="img_porfolio_2">
-								<a href="#"><img src="images/portfolio_2.jpg"></a>
-								<ul class="portfolio_cat">
-									<li><a href="#">knitting</a></li>
-								</ul>
-							</figure>
-							<div class="portfolio_2_post">
-								<header class="portfolio_2_header">
-									<h2><a href="#">Petals, Mint Color, Creative Lettering And More</a></h2>
-								</header>
-								<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
-								<a class="post_read_more" href="post.html">Read More</a>
-								<div class="post_like_com">
-									<a href="#" class="post_like">10</a>
-									<a href="#" class="post_comment">12</a>
-								</div>
-							</div>
-							</article>
-						</li>
-						<li>
-							<article class="one_third">
-							<figure class="img_porfolio_2">
-								<a href="#"><img src="images/portfolio_2.jpg"></a>
-								<ul class="portfolio_cat">
-									<li><a href="#">knitting</a></li>
-								</ul>
-							</figure>
-							<div class="portfolio_2_post">
-								<header class="portfolio_2_header">
-									<h2><a href="#">Petals, Mint Color, Creative Lettering And More</a></h2>
-								</header>
-								<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
-								<a class="post_read_more" href="post.html">Read More</a>
-								<div class="post_like_com">
-									<a href="#" class="post_like">10</a>
-									<a href="#" class="post_comment">12</a>
-								</div>
-							</div>
-							</article>
-						</li>
-						<li>
-							<article class="one_third">
-							<figure class="img_porfolio_2">
-								<a href="#"><img src="images/portfolio_2.jpg"></a>
-								<ul class="portfolio_cat">
-									<li><a href="#">knitting</a></li>
-								</ul>
-							</figure>
-							<div class="portfolio_2_post">
-								<header class="portfolio_2_header">
-									<h2><a href="#">Petals, Mint Color, Creative Lettering And More</a></h2>
-								</header>
-								<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
-								<a class="post_read_more" href="post.html">Read More</a>
-								<div class="post_like_com">
-									<a href="#" class="post_like">10</a>
-									<a href="#" class="post_comment">12</a>
-								</div>
-							</div>
-							</article>
-						</li>
-					</ul>
+					<div class="project_slider">
+						<ul id="ProjectSlider">
+							<li>
+								<article class="masonry_block media_wrap">
+									<figure class="img_porfolio_2">
+										<img src="images/masonry_3.jpg">
+									</figure>
+									<ul class="portfolio_cat">
+										<li><a href="#">knitting</a></li>
+										<li><a href="#">knitting</a></li>
+									</ul>
+									<header class="portfolio_2_header">
+										<h2><a href="#">Petals, Mint Color, Creative Lettering And More</a></h2>
+									</header>
+									<div class="mesonry_data">
+										<span class="post_author">by <a href="#">Sam Watson</a></span>
+										<span class="post_data">on <abbr title="Apr 29, 2016">Apr 29, 2016</abbr></span>
+									</div>	
+									<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+									<a class="post_read_more" href="post.html">Read More</a>
+									<div class="post_like_com">
+										<a href="#" class="post_like">10</a>
+										<a href="#" class="post_comment">12</a>
+									</div>
+								</article>
+							</li>
+							<li>
+								<article class="masonry_block media_wrap">
+									<figure class="img_porfolio_2">
+										<img src="images/masonry_3.jpg">
+									</figure>
+									<ul class="portfolio_cat">
+										<li><a href="#">knitting</a></li>
+										<li><a href="#">knitting</a></li>
+									</ul>
+									<header class="portfolio_2_header">
+										<h2><a href="#">Petals, Mint Color, Creative Lettering And More</a></h2>
+									</header>
+									<div class="mesonry_data">
+										<span class="post_author">by <a href="#">Sam Watson</a></span>
+										<span class="post_data">on <abbr title="Apr 29, 2016">Apr 29, 2016</abbr></span>
+									</div>	
+									<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+									<a class="post_read_more" href="post.html">Read More</a>
+									<div class="post_like_com">
+										<a href="#" class="post_like">10</a>
+										<a href="#" class="post_comment">12</a>
+									</div>
+								</article>
+							</li>
+							<li>
+								<article class="masonry_block media_wrap">
+									<figure class="img_porfolio_2">
+										<img src="images/masonry_3.jpg">
+									</figure>
+									<ul class="portfolio_cat">
+										<li><a href="#">knitting</a></li>
+										<li><a href="#">knitting</a></li>
+									</ul>
+									<header class="portfolio_2_header">
+										<h2><a href="#">Petals, Mint Color, Creative Lettering And More</a></h2>
+									</header>
+									<div class="mesonry_data">
+										<span class="post_author">by <a href="#">Sam Watson</a></span>
+										<span class="post_data">on <abbr title="Apr 29, 2016">Apr 29, 2016</abbr></span>
+									</div>	
+									<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had ceased to twinkle.</p>
+									<a class="post_read_more" href="post.html">Read More</a>
+									<div class="post_like_com">
+										<a href="#" class="post_like">10</a>
+										<a href="#" class="post_comment">12</a>
+									</div>
+								</article>
+							</li>
+						</ul>
+					</div>
+				</div>	
 				<div class="clear"></div>	
 				<div class="bottom_sidebar">
 					<div class="layout_width">
@@ -757,7 +775,7 @@
 		<script type="text/javascript" src="js/jquery.toggle-script.js"></script>
 		<script type="text/javascript" src="js/jquery.boxslider.js"></script>
 		<script type="text/javascript" src="js/jquery.flexslider-carousel.js"></script>
-		<script type="text/javascript" src="js/jquery.slides.js"></script>
-		<script type="text/javascript" src="js/jquery.bxcarousel.js"></script>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		<script type="text/javascript" src="js/jquery.postslider.js"></script>
 	</body>
 </html>
