@@ -1,0 +1,62 @@
+.circliful .outer {
+    fill: transparent;
+    stroke: #333;
+    stroke-width: 19.8;
+    stroke-dasharray: 534;
+    transition: stroke-dashoffset 1s;
+    -webkit-animation-play-state: running;
+    /* firefox bug fix - won't rotate at 90deg angles */
+    -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+/* full circle 25 empty 534 */
+.circliful .inner {
+    fill: transparent;
+    stroke: orange;
+    stroke-width: 20;
+    stroke-dasharray: 534;
+    transition: stroke-dashoffset 1s;
+    -webkit-animation-play-state: running;
+    /* firefox bug fix - won't rotate at 90deg angles */
+    -moz-transform: rotate(-89deg) translateX(-190px);
+    stroke-dashoffset: 0;
+}
+
+.circliful {
+    overflow: visible !important;
+
+}
+
+.svg-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: visible;
+	position:relative;
+	font:bold 12px/26px Karla, Tahoma, Arial, sans-serif;
+	color:#272220;
+	text-transform:uppercase;
+}
+
+.svg-container span {
+	position:absolute;
+	top: 145px;
+    right: 95px;
+}
+
+svg .icon {
+    font-family: FontAwesome;
+}
+
+.circle {
+	width:175px;
+	height:175px;
+}
+
+.percent,
+.number {
+	font:normal 32px/26px Lora, Tahoma, Arial, sans-serif;
+}
+
+.circle_content {
+	text-align:center;
+}

@@ -6,6 +6,10 @@
 .project_slider .mesonry_data {
 	padding-bottom:20px;
 } 
+
+.project_slider {
+	margin-bottom:175px;	
+}
  
 .lSSlideOuter {
     overflow: hidden;
