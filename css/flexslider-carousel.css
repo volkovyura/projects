@@ -113,7 +113,11 @@ html[xmlns] .carousel .slides {
 
 .fox-direction-nav a:hover{
 	background:#fff;
-	border:1px solid #ebebeb;
+	-webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 .fox-prev:before {
@@ -144,6 +148,11 @@ html[xmlns] .carousel .slides {
 .fox-prev:hover:before,
 .fox-next:hover:before {
 	color:#cdc4c2;
+	-webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .fox-nav-next .fox-next,
@@ -206,6 +215,11 @@ html[xmlns] .carousel .slides {
 }
 .fox-control-paging li a:hover {
 	background: #d68662;
+	-webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 
 }
 .fox-control-paging li a.fox-active {

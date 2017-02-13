@@ -10,8 +10,9 @@
 		<link href="css/fontello.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Hind:300,400,700|Karla:400,400i,700,700i|Lora:400,400i,700,700i" rel="stylesheet">
 		<link href="css/flexisel.css" rel="stylesheet">
-		<link href="css/postslider.css" rel="stylesheet">
+		<link href="css/projectslider.css" rel="stylesheet">
 		<link href="css/circli.css" rel="stylesheet">
+		<link href="css/owl-carousel.css" rel="stylesheet">
 		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<title>Handmade</title>
 	</head>
@@ -29,27 +30,67 @@
 								<ul class="main_menu">
 									<li><a href="#">Home blog</a></li>
 									<li><a href="#">home shop</a></li>
+									<li><a href="#">pages</a></li>
+									<li><a href="shortcodes.html">Shortcodes</a>
+										<div class="menu_item_mega_container layout_width">
+											<ul class="sub_menu">
+												<li class="menu_item">
+													<ul class="sub_menu">
+														<li><a href="#">Typography</a></li>
+														<li><a href="#">Shortcodes</a></li>
+														<li><a href="#">blog</a></li>
+														<li><a href="#">Portfolio</a></li>
+														<li><a href="#">About us</a></li>
+													</ul>
+												</li>
+												<li class="menu_item">
+													<ul class="sub_menu">
+														<li><a href="#">Typography</a></li>
+														<li><a href="#">Shortcodes</a></li>
+														<li><a href="#">blog</a></li>
+														<li><a href="#">Portfolio</a></li>
+														<li><a href="#">About us</a></li>
+													</ul>
+												</li>
+												<li class="menu_item">
+													<ul class="sub_menu">
+														<li><a href="#">Typography</a></li>
+														<li><a href="#">Shortcodes</a></li>
+														<li><a href="#">blog</a></li>
+														<li><a href="#">Portfolio</a></li>
+														<li><a href="#">About us</a></li>
+													</ul>
+												</li>
+												<li class="menu_item">
+													<ul class="sub_menu">
+														<li><a href="#">Typography</a></li>
+														<li><a href="#">Shortcodes</a></li>
+														<li><a href="#">blog</a></li>
+														<li><a href="#">Portfolio</a></li>
+														<li><a href="#">About us</a></li>
+													</ul>
+												</li>
+											</ul>
+									</div>	
+									</li>
 									<li>
-										<a href="#">pages</a>
+										<a href="#">Post Types</a>
 										<ul class="page_3">
-											<li><a href="#">page 1</a></li>
-											<li><a href="#">page 1</a></li>
-											<li><a href="#">page 1</a></li>
-											<li><a href="#">page 1</a></li>
+											<li><a href="#">Typography</a></li>
+											<li><a href="#">Shortcodes</a></li>
 											<li>
-												<a href="#">page 1</a>
-												<ul class="page_2">
-													<li><a href="#">page 1</a></li>
-													<li><a href="#">page 1</a></li>
-													<li><a href="#">page 1</a></li>
-													<li><a href="#">page 1</a></li>
-													<li><a href="#">page 1</a></li>
-												</ul>
+												<a href="#">Portfolio</a>
+													<ul class="page_2">
+														<li><a href="#">Typography</a></li>
+														<li><a href="#">Shortcodes</a></li>
+														<li><a href="#">blog</a></li>
+														<li><a href="portfolio.html">Portfolio</a></li>
+														<li><a href="#">About us</a></li>
+													</ul>
 											</li>
+											<li><a href="#">About us</a></li>
 										</ul>
 									</li>
-									<li><a href="shortcodes.html">Shortcodes</a></li>
-									<li><a href="#">Post Types</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -235,7 +276,9 @@
 							<script type="text/javascript">
 								jQuery(window).load(function() {
 								jQuery('.boxslider').boxslider({
-									animation: "slide"
+									animation: "slide",
+									nextText: "",
+									prevText: ""
 								  });
 								});
 							</script>
@@ -346,8 +389,10 @@
 							animationLoop: false,
 							itemWidth: 210,
 							itemMargin: 5,
-							minItems: 2,
-							maxItems: 4
+							minItems: 3,
+							maxItems: 3,
+							prevText: "",
+							nextText: ""
 						  });
 						});
 					</script>
@@ -565,7 +610,7 @@
 							visibleItems: 3,
 							itemsToScroll: 1,         
 							autoPlay: {
-								enable: true,
+								enable: false,
 								interval: 5000,
 								pauseOnHover: true
 							}        
@@ -573,77 +618,82 @@
 						
 					});
 					</script>
-					<ul id="flexiselDemo3">
-						<li>
-							<article class="portfolio_item portfolio_flexisel">
-								<figure class="portfolio_item_img">
-									<img src="images/portfolio_2.jpg" alt="">
-								</figure>
-								<div class="portfolio_item_inner">
-									<ul class="portfolio_cat_inner">
-										<li><a href="#">knitting</a></li>
-										<li><a href="#">Tutorials</a></li>
-									</ul>
-									<h2 class="portfolio_item_title"><a href="portfolio_open.html">How to Create a Unique And Stylish Note Book Cover</a></h2>
-									<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had</p>
-									<a href="#" class="post_like">10</a>
-									<a href="#" class="post_comment">12</a>
-								</div>
-							</article>
-						</li>
-						<li>
-							<article class="portfolio_item portfolio_flexisel">
-								<figure class="portfolio_item_img">
-									<img src="images/portfolio_2.jpg" alt="">
-								</figure>
-								<div class="portfolio_item_inner">
-									<ul class="portfolio_cat_inner">
-										<li><a href="#">knitting</a></li>
-										<li><a href="#">Tutorials</a></li>
-									</ul>
-									<h2 class="portfolio_item_title"><a href="portfolio_open.html">How to Create a Unique And Stylish Note Book Cover</a></h2>
-									<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had</p>
-									<a href="#" class="post_like">10</a>
-									<a href="#" class="post_comment">12</a>
-								</div>
-							</article>
-						</li>
-						<li>
-							<article class="portfolio_item portfolio_flexisel">
-								<figure class="portfolio_item_img">
-									<img src="images/portfolio_2.jpg" alt="">
-								</figure>
-								<div class="portfolio_item_inner">
-									<ul class="portfolio_cat_inner">
-										<li><a href="#">knitting</a></li>
-										<li><a href="#">Tutorials</a></li>
-									</ul>
-									<h2 class="portfolio_item_title"><a href="portfolio_open.html">How to Create a Unique And Stylish Note Book Cover</a></h2>
-									<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had</p>
-									<a href="#" class="post_like">10</a>
-									<a href="#" class="post_comment">12</a>
-								</div>
-							</article>
-						</li>
-					</ul>
+					<div class="portfolio_slider_wrap">
+						<h1>Post Slider</h1>
+						<div class="portfolio_slider">
+							<ul id="flexiselDemo3">
+								<li>
+									<article class="portfolio_item portfolio_flexisel">
+										<figure class="portfolio_item_img">
+											<img src="images/portfolio_2.jpg" alt="">
+										</figure>
+										<div class="portfolio_item_inner">
+											<ul class="portfolio_cat_inner">
+												<li><a href="#">knitting</a></li>
+												<li><a href="#">Tutorials</a></li>
+											</ul>
+											<h2 class="portfolio_item_title"><a href="portfolio_open.html">How to Create a Unique And Stylish Note Book Cover</a></h2>
+											<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had</p>
+											<a href="#" class="post_like">10</a>
+											<a href="#" class="post_comment">12</a>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article class="portfolio_item portfolio_flexisel">
+										<figure class="portfolio_item_img">
+											<img src="images/portfolio_2.jpg" alt="">
+										</figure>
+										<div class="portfolio_item_inner">
+											<ul class="portfolio_cat_inner">
+												<li><a href="#">knitting</a></li>
+												<li><a href="#">Tutorials</a></li>
+											</ul>
+											<h2 class="portfolio_item_title"><a href="portfolio_open.html">How to Create a Unique And Stylish Note Book Cover</a></h2>
+											<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had</p>
+											<a href="#" class="post_like">10</a>
+											<a href="#" class="post_comment">12</a>
+										</div>
+									</article>
+								</li>
+								<li>
+									<article class="portfolio_item portfolio_flexisel">
+										<figure class="portfolio_item_img">
+											<img src="images/portfolio_2.jpg" alt="">
+										</figure>
+										<div class="portfolio_item_inner">
+											<ul class="portfolio_cat_inner">
+												<li><a href="#">knitting</a></li>
+												<li><a href="#">Tutorials</a></li>
+											</ul>
+											<h2 class="portfolio_item_title"><a href="portfolio_open.html">How to Create a Unique And Stylish Note Book Cover</a></h2>
+											<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black, and the stars had</p>
+											<a href="#" class="post_like">10</a>
+											<a href="#" class="post_comment">12</a>
+										</div>
+									</article>
+								</li>
+							</ul>
+						</div>
+					</div>
 					<div class="clear"></div>
 					<script>
 							jQuery(window).load(function() {
 							jQuery("#ProjectSlider").projectSlider({
 							visibleItems: 3,
-							itemsToScroll: 1,
+							itemsToScroll: 1,					
 							autoPlay: {
-								enable: true,
+								enable: false,
 								interval: 5000,
 								pauseOnHover: true,
 								setInterval: 100
-
 							}        
 						});					
 						
 					});
 					</script>
 					<div class="project_slider">
+						<h1>Project Slider</h1>
 						<ul id="ProjectSlider">
 							<li>
 								<article class="masonry_block media_wrap">
@@ -719,7 +769,7 @@
 							</li>
 						</ul>
 					</div>
-					<div class="row">
+					<div class="row statistics_mr">
 						<h1 class="table_caption">Skills</h1>
 						<div class="one_half">
 							<div class="percent_item_linear">
@@ -761,6 +811,7 @@
 								foregroundBorderWidth: 3,
 								backgroundBorderWidth: 3,
 								percent: 79,
+								text: 'Handmade',
 								foregroundColor: "#d68662",
 								backgroundColor: "#ebebeb",
 							}, function(){
@@ -770,37 +821,419 @@
 						</script>
 							<div class="one_fourth">
 								<div id="circle">
-									<span>Handmade</span>
 								</div>
 								<div class="circle_content">
 									<p>The message of The Faithland is that Christ saves sinners. In light of that, we steward a message that radically lives.</p>
 								</div>
 							</div>
 							<script>
-							jQuery(window).load(function() {
-							jQuery("#circle_2").circliful({
-								animation: 1,
-								animationStep: 5,
-								foregroundBorderWidth: 3,
-								backgroundBorderWidth: 3,
-								percent: 79,
-								foregroundColor: "#d68662",
-								backgroundColor: "#ebebeb",
-							}, function(){
-							});
-						});	
-							
-						</script>
+								jQuery(window).load(function() {
+									jQuery("#circle_2").circliful({
+										animation: 1,
+										animationStep: 5,
+										foregroundBorderWidth: 3,
+										backgroundBorderWidth: 3,
+										percent: 79,
+										icon: '\e804',
+										text: 'Handmade',
+										foregroundColor: "#d68662",
+										backgroundColor: "#ebebeb",
+									}, function(){
+									});
+								});
+							</script>
 							<div class="one_fourth">
 								<div id="circle_2">
-									<span>Handmade</span>
 								</div>
 								<div class="circle_content">
 									<p>The message of The Faithland is that Christ saves sinners. In light of that, we steward a message that radically lives.</p>
 								</div>
 							</div>
 					</div>
-				</div>	
+					<div class="stat_wrap">
+						<div class="row">
+							<div class="one_fifth">
+								<div class="stat_titleicon">
+									<span class="stat_counter_wrap">
+										<span>79%</span>
+									</span>
+									<span class="stat_title">Handmade</span>
+								</div>
+								<div class="stat_container">
+									<div class="stat_inner" style="height: 154px"></div>
+								</div>
+								<div class="stat_content">
+									<p>The message of The Faithland is that Christ saves sinners. In light of that, we steward a</p>
+								</div>
+							</div>
+							<div class="one_fifth">
+								<div class="stat_titleicon">
+									<span class="stat_counter_wrap">
+										<span>79%</span>
+									</span>
+									<span class="stat_title">Handmade</span>
+								</div>
+								<div class="stat_container">
+									<div class="stat_inner" style="height: 100px"></div>
+								</div>
+								<div class="stat_content">
+									<p>The message of The Faithland is that Christ saves sinners. In light of that, we steward a</p>
+								</div>
+							</div>
+							<div class="one_fifth">
+								<div class="stat_titleicon">
+									<span class="stat_counter_wrap">
+										<span>79%</span>
+									</span>
+									<span class="stat_title">Handmade</span>
+								</div>
+								<div class="stat_container">
+									<div class="stat_inner" style="height: 190px"></div>
+								</div>
+								<div class="stat_content">
+									<p>The message of The Faithland is that Christ saves sinners. In light of that, we steward a</p>
+								</div>
+							</div>
+							<div class="one_fifth">
+								<div class="stat_titleicon stat_icon">
+									<span class="stat_counter_wrap">
+										<span>79%</span>
+									</span>
+									<span class="stat_title">Handmade</span>
+								</div>
+								<div class="stat_container">
+									<div class="stat_inner" style="height: 50px"></div>
+								</div>
+								<div class="stat_content">
+									<p>The message of The Faithland is that Christ saves sinners. In light of that, we steward a</p>
+								</div>
+							</div>
+							<div class="one_fifth">
+								<div class="stat_titleicon">
+									<span class="stat_counter_wrap">
+										<span>79%</span>
+									</span>
+									<span class="stat_title">Handmade</span>
+								</div>
+								<div class="stat_container">
+									<div class="stat_inner" style="height: 200px"></div>
+								</div>
+								<div class="stat_content">
+									<p>The message of The Faithland is that Christ saves sinners. In light of that, we steward a</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<script>
+					jQuery(window).load(function() {
+					jQuery('.owl-carousel').owlCarousel({
+						loop:true,
+						margin:10,
+						nav:true,
+						items:1,
+						dots: false,
+						navText: [ '', '' ],
+					})
+					})
+					</script>
+					<div class="carousel_content">
+						<div class="owl-carousel owl-theme">
+							<div class="item">
+								<span class="carousel_icon">2 days ago</span>
+								<p>We have the right as individuals to give away as much of our own money as we please in charity but as members
+								Congress we have no right to appropriate a dollar of the public money.<p>
+							</div>
+							<div class="item">
+								<span class="carousel_icon">2 days ago</span>
+								<p>We have the right as individuals to give away as much of our own money as we please in charity but as members
+								Congress we have no right to appropriate a dollar of the public money.<p>
+							</div>
+							<div class="item">
+								<span class="carousel_icon">2 days ago</span>
+								<p>We have the right as individuals to give away as much of our own money as we please in charity but as members
+								Congress we have no right to appropriate a dollar of the public money.<p>
+							</div>
+						</div>
+					</div>
+					<div class="cmsmasters_tabs tabs_mode_tab">
+						<ul class="cmsmasters_tabs_list">
+							<li class="cmsmasters_tabs_list_item">
+								<a href="#" ><span>HOme Decor</span></a>
+							</li>
+							<li class="cmsmasters_tabs_list_item">
+								<a href="#"><span>Souvenirs</span></a>
+							</li>
+							<li  class="cmsmasters_tabs_list_item">
+								<a href="#"><span>accessories</span></a>
+							</li>
+							<li class="cmsmasters_tabs_list_item current_tab">
+								<a href="#"><span>Miscellaneous</span></a>
+							</li>
+						</ul>
+						<div class="cmsmasters_tabs_wrap">
+							<div class="cmsmasters_tab" style="display: none;">
+								<div class="cmsmasters_tab_inner">
+									<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</p>
+								</div>
+							</div>
+							<div  class="cmsmasters_tab" style="display: none;">
+								<div class="cmsmasters_tab_inner">
+									<p>Cras nec imperdiet neque. Vestibulum sem libero, ultrices sit amet elit at, aliquet accumsan purus. Suspendisse interdum felis at odio molestie, at elementum nisi dictum. Donec ac ultricies nisl. Nam posuere accumsan diam, vel mattis nibh volutpat hendrerit. Curabitur ultrices auctor nisl, vel ultricies massa euismod sed. Etiam at imperdiet nulla. Quisque feugiat pulvinar mauris, pulvinar ullamcorper est cursus eget. Aliquam facilisis, nisl ac pharetra fringilla, lacus leo porta ex, et imperdiet enim est nec velit.<br>
+									Etiam eu molestie eros, commodo hendrerit sapien. Maecenas tempus leo ac nisi iaculis porta. Sed sapien tortor, aliquet a velit ut, lacinia molestie velit. Maecenas ornare consequat massa ullamcorper dapibus. Aliquam auctor, sapien sit amet accumsan facilisis, enim enim aliquet arcu, tincidunt pellentesque justo turpis id neque. Duis eleifend nunc sit amet mi dapibus ornare. Suspendisse vel libero sem.</p>
+								</div>
+							</div>
+							<div class="cmsmasters_tab" style="display: none;">
+								<div class="cmsmasters_tab_inner">
+									<p>Cras nec imperdiet neque. Vestibulum sem libero, ultrices sit amet elit at, aliquet accumsan purus. Suspendisse interdum felis at odio molestie, at elementum nisi dictum. Donec ac ultricies nisl. Nam posuere accumsan diam, vel mattis nibh volutpat hendrerit. Curabitur ultrices auctor nisl, vel ultricies massa euismod sed. Etiam at imperdiet nulla. Quisque feugiat pulvinar mauris, pulvinar ullamcorper est cursus eget. Aliquam facilisis, nisl ac pharetra fringilla, lacus leo porta ex, et imperdiet enim est nec velit.</p>
+								</div>
+							</div>
+							<div class="cmsmasters_tab active_tab" style="display: block;">
+								<div class="cmsmasters_tab_inner">
+									<p>Cras nec imperdiet neque. Vestibulum sem libero, ultrices sit amet elit at, aliquet accumsan purus. Suspendisse interdum felis at odio molestie, at elementum nisi dictum. Donec ac ultricies nisl. Nam posuere accumsan diam, vel mattis nibh volutpat hendrerit. Curabitur ultrices auctor nisl, vel ultricies massa euismod sed. Etiam at imperdiet nulla. Quisque feugiat pulvinar mauris, pulvinar ullamcorper est cursus eget. Aliquam facilisis, nisl ac pharetra fringilla, lacus leo porta ex, et imperdiet enim est nec velit.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="cmsmasters_tabs tabs_mode_tour tabs_pos_left">
+						<div class="row">
+							<div class="one_fourth">
+								<ul class="cmsmasters_tabs_list">
+									<li class="cmsmasters_tabs_list_item">
+										<a href="#"><span>HOme Decor</span></a>
+									</li>
+									<li class="cmsmasters_tabs_list_item">
+										<a href="#"><span>Souvenirs</span></a>
+									</li>
+									<li class="cmsmasters_tabs_list_item">
+									<a href="#"><span>accessories</span></a>
+									</li>
+									<li class="cmsmasters_tabs_list_item">
+										<a href="#"><span>Miscellaneous</span></a>
+									</li>
+								</ul>
+							</div>
+							<div class="three_fourth">
+							<div class="cmsmasters_tabs_wrap">
+								<div class="cmsmasters_tab" style="display: none;">
+									<div class="cmsmasters_tab_inner">
+										<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</p>
+									</div>
+								</div>
+								<div class="cmsmasters_tab" style="display: block;">
+									<div class="cmsmasters_tab_inner">
+										<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</p>
+									</div>
+								</div>
+								<div class="cmsmasters_tab" style="display: none;">
+									<div class="cmsmasters_tab_inner">
+										<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</p>
+									</div>
+								</div>
+								<div class="cmsmasters_tab" style="display: none;">
+									<div class="cmsmasters_tab_inner">
+										<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds.</p>
+									</div>
+								</div>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="cmsmasters_tabs tabs_mode_tour tabs_pos_left_icon">
+						<div class="row">
+							<div class="one_fourth">
+								<ul class="cmsmasters_tabs_list">
+									<li class="cmsmasters_tabs_list_item">
+										<a href="#"><span>HOme Decor</span></a>
+									</li>
+									<li class="cmsmasters_tabs_list_item">
+										<a href="#"><span>Souvenirs</span></a>
+									</li>
+									<li class="cmsmasters_tabs_list_item">
+									<a href="#"><span>accessories</span></a>
+									</li>
+									<li class="cmsmasters_tabs_list_item">
+										<a href="#"><span>Miscellaneous</span></a>
+									</li>
+								</ul>
+							</div>
+							<div class="three_fourth">
+								<div class="cmsmasters_tabs_wrap">
+									<div class="cmsmasters_tab" style="display: none;">
+										<div class="cmsmasters_tab_inner">
+											<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to </p>
+										</div>
+									</div>
+									<div class="cmsmasters_tab" style="display: block;">
+										<div class="cmsmasters_tab_inner">
+											<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to </p>
+										</div>
+									</div>
+									<div class="cmsmasters_tab" style="display: none;">
+										<div class="cmsmasters_tab_inner">
+											<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to </p>
+										</div>
+									</div>
+									<div class="cmsmasters_tab" style="display: none;">
+										<div class="cmsmasters_tab_inner">
+											<p>Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to float in the middle of an immense dark sphere, whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. whose upper half was strewn with silver. Looking down into the dark gulf below, I could see a ruddy light streaming through a rift in the clouds. Apparently we had reached a great height in the atmosphere, for the sky was a dead black. had ceased to twinkle. By the same illusion which lifts  the horizon of the seato the level of the spectator on a hillside, the sable cloud beneath was dished out, and the car seemed to </p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="prices_container">
+						<div class="row">
+							<div class="one_fourth"></div>
+							<div class="one_fourth">
+								<div class="pricing_inner">
+									<div class="pricing_wrap">
+										<h6 class="pricing_title">Basic</h6>
+										<div class="price_wrap">
+											<span class="pricing_currency">$</span>
+											<span class="pricing_price">120.99</span>
+										</div>
+										<span class="pricing_period">Per month</span>
+									</div>
+									<ul class="feature_list">
+										<li>WYSIWYG Editor</li>
+										<li>Drag'n'Drop Composer</li>
+										<li>Form Builder</li>
+										<li>2 Sliders included</li>
+									</ul>
+									<div class="pricing_but_wrap">
+										<a href="#" class="pricing_button"><span>Purchase</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="one_fourth">
+								<div class="pricing_inner pricing_inner_active">
+									<div class="pricing_wrap">
+										<h6 class="pricing_title">Basic</h6>
+										<div class="price_wrap">
+											<span class="pricing_currency">$</span>
+											<span class="pricing_price">120.99</span>
+										</div>
+										<span class="pricing_period">Per month</span>
+									</div>
+									<ul class="feature_list">
+										<li>WYSIWYG Editor</li>
+										<li>Drag'n'Drop Composer</li>
+										<li>Form Builder</li>
+										<li>2 Sliders included</li>
+									</ul>
+									<div class="pricing_but_wrap">
+										<a href="#" class="pricing_button"><span>Purchase</span></a>
+									</div>
+								</div>
+							</div>
+							<div class="one_fourth"></div>
+						</div>
+					</div>
+					<div class="clear"></div>
+					<script>
+						jQuery(window).load(function() {
+							jQuery('.counter').counterUp({
+								delay: 10,
+								time: 1000
+							});
+						});
+					</script>
+					<div class="counter_wrap">
+						<div class="row">
+							<div class="one_fifth">
+								<div class="conunter_inner">
+								<span class="counter_content">
+									<span class="counter">79</span>
+									<small>%</small>
+								</span>
+								<div class="counter_title">Handmade</div>
+								</div>
+							</div>
+							<div class="one_fifth">
+								<div class="conunter_inner">
+								<span class="counter_content">
+									<span class="counter">1325</span>
+								</span>
+								<div class="counter_title">Handmade</div>
+								</div>
+							</div>
+							<div class="one_fifth">
+								<div class="conunter_inner">
+								<span class="counter_content">
+									<span class="counter">1325</span>
+								</span>
+								<div class="counter_title">Handmade</div>
+								</div>
+							</div>
+							<div class="one_fifth">
+								<div class="conunter_inner">
+								<span class="counter_content">
+									<span class="counter">1325</span>
+								</span>
+								<div class="counter_title">Handmade</div>
+								</div>
+							</div>
+							<div class="one_fifth">
+								<div class="conunter_inner">
+								<span class="counter_content">
+									<span class="counter">1325</span>
+								</span>
+								<div class="counter_title">Handmade</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="counter_wrap">
+						<div class="row">
+							<div class="one_fifth">
+								<div class="conunter_inner counter_icon">
+								<span class="counter_content">
+									<span class="counter">79</span>
+									<small>%</small>
+								</span>
+								<div class="counter_title">Handmade</div>
+								</div>
+							</div>
+							<div class="one_fifth">
+								<div class="conunter_inner counter_icon">
+								<span class="counter_content">
+									<span class="counter">1325</span>
+								</span>
+								<div class="counter_title">Handmade</div>
+								</div>
+							</div>
+							<div class="one_fifth">
+								<div class="conunter_inner counter_icon">
+								<span class="counter_content">
+									<span class="counter">1325</span>
+								</span>
+								<div class="counter_title">Handmade</div>
+								</div>
+							</div>
+							<div class="one_fifth">
+								<div class="conunter_inner counter_icon">
+								<span class="counter_content">
+									<span class="counter">1325</span>
+								</span>
+								<div class="counter_title">Handmade</div>
+								</div>
+							</div>
+							<div class="one_fifth">
+								<div class="conunter_inner counter_icon">
+								<span class="counter_content">
+									<span class="counter">1325</span>
+								</span>
+								<div class="counter_title">Handmade</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main_counter">
+						<span class="counter">1325</span>
+						<div class="counter_title">Handmade</div>
+					</div>
+				</div>
 				<div class="clear"></div>	
 				<div class="bottom_sidebar">
 					<div class="layout_width">
@@ -851,6 +1284,7 @@
 				</ul>
 			</div>
 		</footer>
+		<script type="text/javascript" src="js/jquery.owl-carousel.js"></script>
 		<script type="text/javascript" src="js/jquery.flexslider.js"></script>
 		<script type="text/javascript" src="js/jquery.hoverslider.js"></script>
 		<script type="text/javascript" src="js/jquery.custom-script.js"></script>
@@ -858,7 +1292,9 @@
 		<script type="text/javascript" src="js/jquery.boxslider.js"></script>
 		<script type="text/javascript" src="js/jquery.flexslider-carousel.js"></script>
 		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
-		<script type="text/javascript" src="js/jquery.postslider.js"></script>
+		<script type="text/javascript" src="js/jquery.projectslider.js"></script>
 		<script type="text/javascript" src="js/jquery.circli-script.js"></script>
+		<script type="text/javascript" src="js/jquery.counterup.js"></script>
+		<script type="text/javascript" src="js/jquery.waypoints.js"></script>
 	</body>
 </html>

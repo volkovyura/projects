@@ -7,6 +7,12 @@
 	padding-bottom:20px;
 } 
 
+.project_slider h1 {
+	margin-bottom:50px;
+	text-align:center;
+	
+}
+
 .project_slider {
 	margin-bottom:175px;	
 }
@@ -167,14 +173,14 @@
     top: 290px;
     width: 30px;
     height: 50px;
-    background: #f8efea;
+    background: #cec2bf;
     color: #3e3938;
 	cursor:pointer;
 }
 
 .lSAction > a:hover {
     opacity: 1;
-	background:#cec2bf;
+	background:#f8efea;
 }
  
 .lSAction > .lSPrev:before {
@@ -184,6 +190,7 @@
     right: 10px;
     bottom: 12px;
     font-size: 25px;
+	color:#fefefd;
 }
 
 .lSAction > .lSNext:before {
@@ -193,6 +200,12 @@
     right: 10px;
     bottom: 12px;
     font-size: 25px;
+	color:#fefefd;
+}
+
+.lSAction > .lSPrev:hover:before,
+.lSAction > .lSNext:hover:before {
+	color:#272220;
 }
 
 .lSAction > .lSPrev {

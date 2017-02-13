@@ -113,6 +113,16 @@ html[xmlns] .boxslider .slides {
     color: #3e3938;
 }
 
+.box-nav-prev .box-prev:hover,
+.box-nav-next .box-next:hover {
+	color:#e3dddc;
+	 -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}
+
 .box-nav-next .box-next {
 	right:0;
 }

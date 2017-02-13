@@ -6,6 +6,11 @@
 	
 }
 
+.portfolio_slider_wrap h1 {
+	margin-bottom:70px;
+	text-align:center;
+}
+
 .portfolio_flexisel {
 	margin:0 20px;
 }
