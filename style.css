@@ -1016,6 +1016,10 @@ span.dropcap2 {
 	text-transform:uppercase;
 }
 
+.about_categories li a:hover {
+	color:#d68662;
+}
+
 .about_categories li {
 	padding-left:0;
 	border-bottom:1px solid #ededed;
@@ -2846,6 +2850,11 @@ span.dropcap2 {
 
 /* Shop_product styles */
 
+
+.shop_products {
+	margin-bottom:30px;
+}
+
 .shop_products img {
 	display:block;
 	width:100%;
@@ -2860,7 +2869,7 @@ span.dropcap2 {
 
 
 .shop_header h2 {
-	margin-bottom:12px;
+	margin-bottom:7px;
 }
 
 .shop_header h2 a {
@@ -2888,13 +2897,14 @@ span.dropcap2 {
 }
 
 .shop_main_header {
-	margin-bottom:65px;
+	margin-bottom:52px;
 	float:left;
 }
 
 .product_info {
 	float:right;
 	text-align:right;
+	padding-right:5px;
 }
 
 .product_info .shop_price {
@@ -2903,14 +2913,14 @@ span.dropcap2 {
 }
 
 .icon_star {
-	margin-bottom:12px;
+	margin-bottom:4px;
 }
 
 .icon_star span:before {
 	content:'\e806';
 	font-family:'fontello';
 	color:#d68662;
-	font-size:14px;
+	font-size:12px;
 }
 
 .icon_star span:last-child:before {
@@ -2971,14 +2981,14 @@ span.dropcap2 {
 
 .shop_tabs {
 	position:relative;
-	margin-bottom:150px;
+	margin-bottom:115px;
 	text-align:center;
 }
 
 .shop_tabs .shop_tabs_list {
 	list-style:none;
 	position:relative;
-	margin:35px;
+	margin:35px 85px 28px 35px;
 	padding:0;
 }
 
@@ -3015,8 +3025,8 @@ span.dropcap2 {
 }
 
 .shop_tab_inner .shop_attributes td p {
-	padding-bottom:12px;
-	padding-top:12px;
+	padding-bottom:10px;
+	padding-top:10px;
 }
 
 .shop_tab_inner .shop_attributes td {
@@ -3026,6 +3036,10 @@ span.dropcap2 {
 
 .shop_tab_inner .shop_attributes tr {
 	border-bottom:1px solid #ebebeb;
+}
+
+.shop_tab_inner .shop_attributes tr:last-child {
+	border:none;
 }
 
 .shop_comments_header {
@@ -3084,7 +3098,7 @@ span.dropcap2 {
 }
 
 .shop_comments .shop_comments_post_data .icon_star span:before {
-	font-size:12px;
+	font-size:11px;
 }
 
 /* Shop styles */
@@ -3445,6 +3459,7 @@ span.dropcap2 {
 .widget_product {
 	margin-bottom:40px;
 	display:block;
+	margin-top:20px;
 }
 
 .search_widget_product {
@@ -3497,12 +3512,13 @@ input[type="submit"]:focus, input[type="button"]:focus {
 
 
 .slider {
-	width:310px;
-	height:3px;
+	width:100%;
+	height:2px;
 	background:#ebebeb;
 	position:relative;
 	margin:0 auto;
 	padding:0 10px;
+	margin-top:35px;
 }
 
 .ui-slider-handle {
@@ -3522,7 +3538,7 @@ input[type="submit"]:focus, input[type="button"]:focus {
 
 .ui-widget-header {
 	background:#d68662;
-	height:3px;
+	height:2px;
 	left:1px;
 	top:1px;
 	position:absolute;
@@ -3532,6 +3548,11 @@ input[type="submit"]:focus, input[type="button"]:focus {
 	font:normal 13px/26px Karla, Tahoma, Arial, sans-serif;
 	color:#848180;
 	padding-top:15px;
+}
+
+.widget_slider_price {
+	border:1px solid #ebebeb;
+	padding:25px 25px 45px 25px;
 }
 
 .widget__posts_tabs_product .product_info {
@@ -3565,6 +3586,14 @@ input[type="submit"]:focus, input[type="button"]:focus {
 	padding-left:8px;
 }
 
+
+.widget__posts_tabs_product .latest_post {
+	margin:0 20px 20px 0;
+}
+
+.widget__posts_tabs_product .about_latest_post li {
+	padding:0;
+}
 
 .view_cart {
 	display:block;
