@@ -1229,14 +1229,14 @@ span.dropcap2 {
 .sort_name:before {
 	content:'\f107';
 	font-family:'fontello';
-	font-size: 18px;
+	font-size: 22px;
 	padding-right:10px;
 }
 
 .sort_data:before {
 	content:'\f106';
 	font-family:'fontello';
-	font-size: 18px;
+	font-size: 22px;
 	padding-right:10px;
 }
 
@@ -1244,7 +1244,11 @@ span.dropcap2 {
 	border-left:1px solid #ededed;
 	border-right:1px solid #ededed;
 	border-bottom:1px solid #ededed;
-	padding:25px 45px 20px 25px;
+	padding:20px;
+}
+
+.portfolio_2_post .post_like_com {
+	margin-right:22px;
 }
 
 .img_porfolio_2 img {
@@ -1298,7 +1302,6 @@ span.dropcap2 {
 
 .portfolio_cat_inner li {
 	padding:0;
-	margin-right:1px;
 }
 
 .portfolio_cat_inner li a {
@@ -1319,6 +1322,11 @@ span.dropcap2 {
 .portfolio_item_title a {
 	color:#ffffff;
 	font:normal 20px/28px Lora, Tahoma, Arial, sans-serif;
+	-webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .portfolio_item_title a:hover {
@@ -1329,12 +1337,16 @@ span.dropcap2 {
     position: absolute;
     top: 0;
     left: 0;
-    margin: 15px;
+    margin: 8px;
 }
 
 .portfolio_cat_inner li,
 .portfolio_cat li {
 	display:inline-block;
+}
+
+.portfolio_cat li {
+	padding:6px 0 6px 5px;
 }
 
 .portfolio_cat li a {
@@ -1366,6 +1378,7 @@ span.dropcap2 {
 .portfolio_item_inner
 .post_like {
 	color:#f3dbd0;
+	margin-right:6px;
 }
 
 .portfolio_item_inner
