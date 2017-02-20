@@ -135,6 +135,11 @@ html[xmlns] .carousel .slides {
   padding:0;
 }
 
+.fox-nav-next:focus,
+.fox-nav-prev:focus {
+	outline:none;
+}
+
 .fox-next:before {
 	content: '\f105';
     font-family: 'fontello';
