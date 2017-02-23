@@ -362,11 +362,11 @@ ol > li {
 	font:bold 12px Karla, Tahoma, Arial, sans-serif;
 	color:#706663;
 	text-transform:uppercase;
-	 -webkit-transition: padding 0.3s ease-in-out;
-  -moz-transition: padding 0.3s ease-in-out;
-  -ms-transition: padding 0.3s ease-in-out;
-  -o-transition: padding 0.3s ease-in-out;
-  transition: padding 0.3s ease-in-out;
+	 -webkit-transition: padding 0.3s ease-in-out, color 0.3s ease-in-out;
+  -moz-transition: padding 0.3s ease-in-out, color 0.3s ease-in-out;
+  -ms-transition: padding 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: padding 0.3s ease-in-out, color 0.3s ease-in-out;
+  transition: padding 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .main_menu ul li a:hover {
@@ -469,6 +469,11 @@ ol > li {
     font-size: 15px;
     line-height: 20px;
 	color:#cec2bf;
+}
+
+.search_but_wrap a:hover:before,
+.cart_wrap_inner a:hover:before {
+	color:#d68662;
 }
 
 .search_but_wrap {
@@ -576,6 +581,7 @@ ol > li {
 	background:#ebebeb;
 }
 
+
 /* Head_line styles */
 
 .head_line {
@@ -583,6 +589,10 @@ ol > li {
 	text-align:center;
 	padding:45px;
 	margin-bottom:85px;
+}
+
+.head_line h1 {
+	margin:10px 0 8px 0;
 }
 
 .breadcrumbs li {
@@ -595,6 +605,10 @@ ol > li {
 	font:bold 12px/28px Karla, Tahoma, Arial, sans-serif;
 	color:#848180;
 	text-transform:uppercase;
+}
+
+.breadcrumbs li a:hover {
+	color:#272220;
 }
 
 .breadcrumbs li:last-child {
@@ -640,7 +654,7 @@ ol > li {
 .text_caption p {
 	font:bold 14px/20px Karla, Tahoma, Arial, sans-serif;
 	text-transform:uppercase;
-	padding:20px 10px;
+	padding: 20px 15px 10px 15px;
 	color:#272220;
 }
 
@@ -689,7 +703,7 @@ span.dropcap  {
 	position: relative;
     float: left;
     margin: 0px 20px 30px 0;
-    padding: 8px;
+    padding: 11px 8px 8px 8px;
     width: 64px;
     height: 64px;
     border-radius: 50%;
@@ -720,6 +734,11 @@ span.dropcap2 {
 	position:absolute;
 	left:0;
 	top:14px;
+}
+
+.list_style_1 li ol, 
+.list_2 li ul {
+	padding-top:5px;
 }
 
 .code {
@@ -4050,11 +4069,11 @@ input[type="submit"]:focus, input[type="button"]:focus {
 
 /* Transitions */
 a {
-  -webkit-transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
-  -moz-transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
-  -ms-transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
-  -o-transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
-  transition: color 0.3s ease-in-out, background 0.3s ease-in-out;
+   -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 a:before {
