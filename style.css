@@ -1693,12 +1693,17 @@ span.dropcap2 {
 	padding:85px 0;
 }
 
-.bank_card li {
-	display:inline-block;
+.bank_card {
+	margin-top:10px;
 }
 
-.bank_card li:first-child {
-	padding-left:0;
+.bank_card li {
+	display:inline-block;
+	padding:0;
+}
+
+.bank_card li:last-child {
+	padding-right:4px;
 }
 
 .useful_links li a,
@@ -1720,6 +1725,7 @@ span.dropcap2 {
  
 .social_heading {
 	position:relative;
+	margin-bottom:30px;
 } 
  
 .social_heading:after {
@@ -1730,7 +1736,7 @@ span.dropcap2 {
 	position:absolute;
     left:0;
     bottom:0;
-	top:25px;
+	top:23px;
 }
 
 /* blog_masonry-styles */
