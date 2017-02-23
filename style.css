@@ -981,12 +981,22 @@ span.dropcap2 {
 	border:1px solid #ebebeb;
 	position:relative;
 	margin-bottom: 30px;
-	padding: 40px 25px 25px 25px;;
+	padding:25px;
+	overflow:hidden;
 }
 
 .img_wrap img {
 	width:100%;
 	display:block;
+}
+
+.media_wrap h3 {
+	margin-bottom:5px;
+	margin-top:7px;
+}
+
+.media_wrap p {
+	padding-bottom:9px;
 }
 
 .post {
@@ -1141,7 +1151,7 @@ span.dropcap2 {
 	font:bold 15px/18px Karla, Tahoma, Arial, sans-serif;
 	text-align:center;
 	overflow: hidden;
-	margin-bottom: 25px;
+	margin-bottom: 20px;
 }
 
 .widget_title_load_more {
@@ -1182,11 +1192,16 @@ span.dropcap2 {
 
 .widget_about_author h3 {
 	text-align:center;
+	margin-bottom:10px;
+}
+
+.widget_about_author .widget_title {
+	margin-bottom:25px;
 }
 
 .about_author_content {
 	text-align:center;
-	padding-bottom:25px;
+	padding-bottom:17px;
 }
 
 .about_author_social {
@@ -1251,7 +1266,7 @@ span.dropcap2 {
 }
 
 .about_categories li {
-	padding-left:0;
+	padding:9px 0;
 	border-bottom:1px solid #ededed;
 }
 
@@ -1293,6 +1308,11 @@ span.dropcap2 {
 .about_latest_post li a {
 	font:normal 16px/22px Lora, Tahoma, Arial, sans-serif;
 	color:#272220;
+}
+
+.latest_post a,
+.latest_post img {
+	display:block;
 }
 
 .about_latest_post li {
@@ -1594,6 +1614,11 @@ span.dropcap2 {
 
 .portfolio_cat li a:hover {
 	background:#baadaa;
+	 -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 .portfolio_2_header a {
@@ -1810,8 +1835,9 @@ span.dropcap2 {
 }
 
 .blog_open_post_list {
-	margin-bottom:65px;
+	margin-bottom:60px;
 	overflow:hidden;
+	padding-bottom:5px;
 }
 
 .blog_open_post_list_1 .post_read_more {
@@ -1838,6 +1864,7 @@ span.dropcap2 {
 .blog_open_post_list_1 .slyde_left {
 	top:0;
 	background:#f8efea;
+	border: 1px solid transparent;
 }
 
 .blog_open_post_list_1:hover .slyde_left {
@@ -1873,6 +1900,7 @@ span.dropcap2 {
 .blog_open_post_list_2 .slyde_right {
 	top:0;
 	background:#f8efea;
+	border: 1px solid transparent;
 }
 
 .blog_open_post_list_2:hover .slyde_right {
@@ -1886,7 +1914,8 @@ span.dropcap2 {
 
 .blog_open_post_2  {
 	float:left;
-	margin:0 25px 25px 0;
+	margin:0 25px 0 0;
+	display:block;
 }
 
 .blog_like img,
@@ -3275,6 +3304,7 @@ span.dropcap2 {
 	position:relative;
 	margin-bottom:115px;
 	text-align:center;
+	padding-right:5px;
 }
 
 .shop_tabs .shop_tabs_list {
@@ -3337,7 +3367,7 @@ span.dropcap2 {
 .shop_comments_header {
 	display:block;
 	width:100%;
-	margin-bottom:55px;
+	margin-bottom:40px;
 	overflow:hidden;
 }
 
@@ -3346,6 +3376,7 @@ span.dropcap2 {
 	float:left;
 	margin:0;
 }
+
 
 .shop_comments_header .icon_star {
 	float:right;
@@ -3356,6 +3387,7 @@ span.dropcap2 {
 	list-style:none;
 	border-bottom:1px solid #ebebeb;
 	margin-bottom:45px;
+	padding:0 0 20px 0;
 }
 
 .shop_comments {
@@ -3381,6 +3413,7 @@ span.dropcap2 {
 .shop_comments_post_data {
     position: relative;
     overflow: hidden;
+	margin-bottom:5px;
 }
 
 .shop_comments .shop_comments_post_data .icon_star .post_data {
@@ -3390,7 +3423,7 @@ span.dropcap2 {
 }
 
 .shop_comments .shop_comments_post_data .icon_star span:before {
-	font-size:11px;
+	font-size:10px;
 }
 
 /* Shop styles */
@@ -3852,6 +3885,11 @@ input[type="submit"]:focus, input[type="button"]:focus {
     text-align: left;
 }
 
+.widget__posts_tabs_product .about_latest_post {
+	margin-bottom:5px;
+}
+
+
 .widget__posts_tabs_product .product_info .icon_star {
 	margin:0;
 	line-height: 18px;
@@ -3870,6 +3908,7 @@ input[type="submit"]:focus, input[type="button"]:focus {
 	font:bold 14px/22px Karla, Tahoma, Arial, sans-serif;
 	text-transform:uppercase;
 	color:#272220;
+	margin-bottom:6px;
 }
 
 .subtotal_price span {
