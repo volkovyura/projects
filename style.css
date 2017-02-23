@@ -3325,7 +3325,7 @@ span.dropcap2 {
 	text-transform:uppercase;
 }
 
-.shop_tabs .shop_tabs_list .shop_tabs_list_item a:active {
+.shop_tabs .shop_tabs_list .current_tab a {
 	color:#272220;
 }
 
