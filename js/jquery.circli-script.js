@@ -16,7 +16,7 @@
 			animation: 1,
 			animationStep: 5,
 			icon: 'none',
-			iconSize: '30',
+			iconSize: '22',
 			iconColor: '#ccc',
 			iconPosition: 'top',
 			target: 0,
@@ -36,7 +36,7 @@
 			noPercentageSign: false,
 			replacePercentageByText: null,
 			halfCircle: false,
-			animateInView: false,
+			animateInView: true,
 			decimals: 0,
 			alwaysDecimals: false
 		}, options);

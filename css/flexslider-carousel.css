@@ -48,10 +48,7 @@
   display: none;
   -webkit-backface-visibility: hidden;
 }
-.carousel .slides img {
-  width: 100%;
-  display: block;
-}
+
 .carousel .slides:after {
   content: "\0020";
   display: block;
@@ -73,9 +70,16 @@ html[xmlns] .carousel .slides {
  * DEFAULT THEME
  * ====================================================================================================================*/
 .carousel {
-  margin: 0 0 160px;
+  margin: 0 0 130px;
   position: relative;
+  padding-bottom:85px;
 }
+
+.carousel_slides_header {
+	margin-bottom:60px;
+	text-align:center;
+}
+
 .carousel .slides {
   zoom: 1;
 }
@@ -83,6 +87,8 @@ html[xmlns] .carousel .slides {
 	width:214px;
 	height: auto;
 	-moz-user-select: none;
+	display: block;
+	margin-left:25px;
 }
 
 
@@ -135,8 +141,8 @@ html[xmlns] .carousel .slides {
   padding:0;
 }
 
-.fox-nav-next:focus,
-.fox-nav-prev:focus {
+.fox-next:focus,
+.fox-prev:focus {
 	outline:none;
 }
 
@@ -197,7 +203,7 @@ html[xmlns] .carousel .slides {
 .fox-control-nav {
   width: 100%;
   position: absolute;
-  bottom: -65px;
+  bottom:0px;
   text-align: center;
 }
 
@@ -217,14 +223,15 @@ html[xmlns] .carousel .slides {
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-}
-.fox-control-paging li a:hover {
-	background: #d68662;
-	-webkit-transition: background 0.3s ease-in-out;
+		-webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   -ms-transition: background 0.3s ease-in-out;
   -o-transition: background 0.3s ease-in-out;
   transition: background 0.3s ease-in-out;
+}
+.fox-control-paging li a:hover {
+	background: #d68662;
+	
 
 }
 .fox-control-paging li a.fox-active {

@@ -112,6 +112,12 @@
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
+	cursor:pointer;
+		-webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 .lSSlideOuter .lSPager.lSpg > li:hover a, .lSSlideOuter .lSPager.lSpg > li.active a {
     background: #d68662;
@@ -176,6 +182,11 @@
     background: #cec2bf;
     color: #3e3938;
 	cursor:pointer;
+		-webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 
 .lSAction > a:hover {
@@ -191,6 +202,11 @@
     bottom: 12px;
     font-size: 25px;
 	color:#fefefd;
+		-webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .lSAction > .lSNext:before {
@@ -201,6 +217,11 @@
     bottom: 12px;
     font-size: 25px;
 	color:#fefefd;
+		-webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .lSAction > .lSPrev:hover:before,
@@ -387,49 +408,4 @@
         bottom: 0;
     }
 }
-.lSSlideOuter .rightEnd {
-    -webkit-animation: rightEnd 0.3s;
-    animation: rightEnd 0.3s;
-    position: relative;
-}
-.lSSlideOuter .leftEnd {
-    -webkit-animation: leftEnd 0.3s;
-    animation: leftEnd 0.3s;
-    position: relative;
-}
-.lSSlideOuter.vertical .rightEnd {
-    -webkit-animation: topEnd 0.3s;
-    animation: topEnd 0.3s;
-    position: relative;
-}
-.lSSlideOuter.vertical .leftEnd {
-    -webkit-animation: bottomEnd 0.3s;
-    animation: bottomEnd 0.3s;
-    position: relative;
-}
-.lSSlideOuter.lSrtl .rightEnd {
-    -webkit-animation: leftEnd 0.3s;
-    animation: leftEnd 0.3s;
-    position: relative;
-}
-.lSSlideOuter.lSrtl .leftEnd {
-    -webkit-animation: rightEnd 0.3s;
-    animation: rightEnd 0.3s;
-    position: relative;
-}
-/*/  GRab cursor */
-.projectSlider.lsGrab > * {
-  cursor: -webkit-grab;
-  cursor: -moz-grab;
-  cursor: -o-grab;
-  cursor: -ms-grab;
-  cursor: grab;
-}
-.projectSlider.lsGrabbing > * {
-  cursor: move;
-  cursor: -webkit-grabbing;
-  cursor: -moz-grabbing;
-  cursor: -o-grabbing;
-  cursor: -ms-grabbing;
-  cursor: grabbing;
-}
+

@@ -266,6 +266,11 @@
 	font-family:fontello;
 	color:#2e2927;
 	font-size:25px;
+	 -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 
@@ -274,6 +279,11 @@
 	font-family:fontello;
 	color:#2e2927;
 	font-size:25px;
+	 -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 .owl-theme .owl-nav .owl-next:hover:before,

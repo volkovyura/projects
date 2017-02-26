@@ -6,6 +6,8 @@
 		<link href="style.css" rel="stylesheet">
 		<link href="css/fontello.css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Hind:300,400,700|Karla:400,400i,700,700i|Lora:400,400i,700,700i" rel="stylesheet">
+		<link href="css/flexisel_demo2.css" rel="stylesheet">
+		<script type="text/javascript" src="js/jquery.min.js"></script>
 		<title>blog_open_post</title>
 	</head>
 	<body>
@@ -35,7 +37,7 @@
 						<ul class="breadcrumbs">
 							<li><a href="#">home</a></li>
 							<li><a href="#">Pages</a></li>
-							<li>Typography</li>
+							<li>typography</li>
 						</ul>
 					</div>
 				</div>				
@@ -47,7 +49,7 @@
 									<ul class="post_cat post_cat_2">
 										<li><a href="#">knitting</a></li>
 									</ul>
-									<h2 class="post_title"><a href="post.html">Autumn Must-Have: Massive Knitted Skarf DIY Tutorial</a></h2>
+									<h2 class="post_title">Autumn Must-Have: Massive Knitted Skarf DIY Tutorial</h2>
 									<div class="mesonry_data">
 										<span class="post_author">by <a href="#">Sam Watson</a></span>
 										<span class="post_data">on <abbr title="Apr 29, 2016">Apr 29, 2016</abbr></span>
@@ -96,36 +98,48 @@
 							</div>
 						</article>
 						<div class="clear"></div>
-						<div class="post">
+						<div class="portfolio_open_slider_wrap">	
 							<h2>You May Also Like</h2>
-							<div class="row">
-								<div class="one_third">
-									<article class="blog_like">
-										<figure class="blog_like_img">
-											<img src="images/blog_open_post_3.jpg">
-											<a class="slyde_left" href="#"></a>
-										</figure>
-										<h6><a href="#">Autumn Must-Have: Massive Knitted Skarf DIY Tutorial</a></h6>
-									</article>
-								</div>
-								<div class="one_third">
-									<article class="blog_like">
-										<img src="images/blog_open_post_3.jpg">
-										<h6><a href="#">Autumn Must-Have: Massive Knitted Skarf DIY Tutorial</a></h6>
-									</article>
-								</div>
-								<div class="one_third">
-									<article class="blog_like">
-										<figure class="blog_like_img">
+							<script>
+									jQuery(window).load(function() {
+									jQuery("#flexiselDemo2").flexisel({
+									visibleItems: 3,
+									itemsToScroll: 1,         
+									autoPlay: {
+										enable: true,
+										interval: 2000,
+										pauseOnHover: true
+									}        
+								});					
+								
+							});
+							</script>
+							<div class="post_slider_open">
+								<ul id="flexiselDemo2">
+									<li>
+										<article class="slider_open_post_inner">
 											<img src="images/blog_open_post_3.jpg">
 											<h6><a href="#">Autumn Must-Have: Massive Knitted Skarf DIY Tutorial</a></h6>
-											<a class="slyde_right" href="#"></a>
-										</figure>
-									</article>
-								</div>
+										</article>
+									</li>
+									<li>
+										<article class="slider_open_post_inner">
+											<img src="images/blog_open_post_3.jpg">
+											<h6><a href="#">Autumn Must-Have: Massive Knitted Skarf DIY Tutorial</a></h6>
+										</article>
+									</li>
+									<li>
+										<article class="slider_open_post_inner">
+											<img src="images/blog_open_post_3.jpg">
+											<h6><a href="#">Autumn Must-Have: Massive Knitted Skarf DIY Tutorial</a></h6>
+										</article>
+									</li>
+								</ul>
 							</div>
 						</div>
+						<div class="clear"></div>
 						<div class="post">
+							<h2>Comments (6)</h2>
 							<aside class="blog_comments">
 								<ul>
 									<li class="comments_1">
@@ -377,5 +391,6 @@
 				</ul>
 			</div>
 		</footer>
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
 	</body>
 </html>

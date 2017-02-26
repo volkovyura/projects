@@ -1,0 +1,96 @@
+.nbs-flexisel-ul {
+    position:relative;
+    width:99999px;
+    margin:0;
+    padding:0;
+	
+}
+
+.nbs-flexisel-container {
+    position:relative;
+    width:100%;
+}
+
+
+.nbs-flexisel-inner {
+    position: relative;
+    overflow: hidden;
+    float:left;
+    width:100%;
+}
+
+.nbs-flexisel-item {
+    float:left;
+    margin:0;
+    padding:0;
+    cursor:pointer;
+    position:relative;
+}
+
+.nbs-flexisel-item img {
+	display:block;
+    cursor: pointer;
+    position: relative;
+	width:100%;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    position: absolute;
+    top: 177px;
+    width: 30px;
+    height: 50px;
+    background: #ffffff;
+    color: #3e3938;
+	cursor:pointer;
+}
+
+.nbs-flexisel-nav-left {
+    left: 26px;
+	top: 100px;
+}
+
+.nbs-flexisel-nav-left:before {
+    content: '\f104';
+    font-family: 'fontello';
+	position: absolute;
+    right: 10px;
+    bottom: 14px;
+    font-size: 25px;
+	color:#272220;
+}
+
+.nbs-flexisel-nav-left.disabled {
+    opacity: 0.4;
+}
+
+.nbs-flexisel-nav-right {
+    right: 26px;
+	top: 100px;    
+}
+
+.nbs-flexisel-nav-right:before {
+    content: '\f105';
+    font-family: 'fontello';
+	position: absolute;
+    right: 8px;
+    bottom: 14px;
+    font-size: 25px;
+	color:#272220;
+}
+
+.nbs-flexisel-nav-right.disabled {
+    opacity: 0.4;
+}
+
+.nbs-flexisel-nav-right:hover:before,
+.nbs-flexisel-nav-left:hover:before {
+	color:#baadaa;
+	  -webkit-transition: color 0.3s ease-in-out;
+  -moz-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  -o-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+}

@@ -56,6 +56,7 @@ html[xmlns] .boxslider .slides {
  * ====================================================================================================================*/
  .boxslider {
   position: relative;
+  margin-right:5px;
 }
 
 .boxslider .slides .slide_content img {
@@ -93,7 +94,7 @@ html[xmlns] .boxslider .slides {
 
 .box-nav-prev .box-prev {
 	position: absolute;
-    top: 40%;
+    top: 42%;
     width: 30px;
     height: 50px;
     background: #ffffff;
@@ -106,21 +107,21 @@ html[xmlns] .boxslider .slides {
 
 .box-nav-next .box-next {
 	position: absolute;
-    top: 40%;
+    top: 42%;
     width: 30px;
     height: 50px;
     background: #ffffff;
     color: #3e3938;
-}
-
-.box-nav-prev .box-prev:hover,
-.box-nav-next .box-next:hover {
-	color:#e3dddc;
 	 -webkit-transition: color 0.3s ease-in-out;
   -moz-transition: color 0.3s ease-in-out;
   -ms-transition: color 0.3s ease-in-out;
   -o-transition: color 0.3s ease-in-out;
   transition: color 0.3s ease-in-out;
+}
+
+.box-nav-prev .box-prev:hover,
+.box-nav-next .box-next:hover {
+	color:#e3dddc;
 }
 
 .box-nav-next .box-next {
@@ -133,6 +134,8 @@ html[xmlns] .boxslider .slides {
   position: absolute;
   bottom:0;
   text-align: center;
+  margin-bottom: 7px;
+  padding-right:4px;
 }
 .box-main-nav li {
 	margin: 0 3px;
@@ -151,6 +154,11 @@ html[xmlns] .boxslider .slides {
 	-webkit-border-radius: 20px;
 	-moz-border-radius: 20px;
 	border-radius: 20px;
+	 -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  -ms-transition: background 0.3s ease-in-out;
+  -o-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
 }
 .box-control-paging li a:hover {
   background: #d68662;
